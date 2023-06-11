@@ -1,0 +1,353 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7388D214-3834-4BD1-AD9C-860DFD0FBD28}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Horizon_Explorers</RootNamespace>
+    <AssemblyName>Horizon Explorers</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\LandingPage_assets\css\animate.min.css" />
+    <Content Include="assets\LandingPage_assets\dummy\figure-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\figure-1.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\footer-customer-service%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\footer-customer-service.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-1.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-2.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-3.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\offer-thumbnail-4.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-1.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-2.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-3.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-4.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-1.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-2.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-3.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\person-team-4.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-1.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-2.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\dummy\slide-3.jpg" />
+    <Content Include="assets\LandingPage_assets\fonts\font-awesome.min.css" />
+    <Content Include="assets\LandingPage_assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\LandingPage_assets\fonts\icomoon.svg" />
+    <Content Include="assets\LandingPage_assets\human_images\Cisneros.jpg" />
+    <Content Include="assets\LandingPage_assets\human_images\ferrero.jpg" />
+    <Content Include="assets\LandingPage_assets\human_images\kumar.jpg" />
+    <Content Include="assets\LandingPage_assets\human_images\mahmud.jpg" />
+    <Content Include="assets\LandingPage_assets\human_images\Warren .jpg" />
+    <Content Include="assets\LandingPage_assets\images\logo%402x.png" />
+    <Content Include="assets\LandingPage_assets\images\logo-footer%402x.png" />
+    <Content Include="assets\LandingPage_assets\images\logo-footer.png" />
+    <Content Include="assets\LandingPage_assets\images\logo.png" />
+    <Content Include="assets\LandingPage_assets\images\long-arrow%402x.png" />
+    <Content Include="assets\LandingPage_assets\images\long-arrow.png" />
+    <Content Include="assets\LandingPage_assets\images\small-arrow%402x.png" />
+    <Content Include="assets\LandingPage_assets\images\small-arrow.png" />
+    <Content Include="assets\LandingPage_assets\js\app.js" />
+    <Content Include="assets\LandingPage_assets\js\ie-support\html5.js" />
+    <Content Include="assets\LandingPage_assets\js\ie-support\pie.htc" />
+    <Content Include="assets\LandingPage_assets\js\ie-support\respond.js" />
+    <Content Include="assets\LandingPage_assets\js\jquery-1.11.1.min.js" />
+    <Content Include="assets\LandingPage_assets\js\min\app-min.js" />
+    <Content Include="assets\LandingPage_assets\js\min\plugins-min.js" />
+    <Content Include="assets\LandingPage_assets\js\plugins.js" />
+    <Content Include="assets\LandingPage_assets\location_images\aliKodom.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\bandarban2.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\bisnakandi.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\coxs.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\debotakhum.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\kaptaiLake.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\kuakata.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\nafakhum.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\sajek.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\slider1.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\slider2.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\slider3.jpg" />
+    <Content Include="assets\LandingPage_assets\location_images\sundarban.jpg" />
+    <Content Include="assets\LandingPage_assets\style.css" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._about-us.html" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._contact.html" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._customer-protection.html" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._index.html" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._our-offer.html" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._style.css" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\css\._animate.min.css" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._figure-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._figure-1.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._footer-customer-service%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._footer-customer-service.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-1.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-2.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-3.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._offer-thumbnail-4.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-1.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-2.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-3.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-4.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-1.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-2.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-3.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-4%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._person-team-4.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-1%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-1.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-2%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-2.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-3%402x.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\dummy\._slide-3.jpg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._font-awesome.min.css" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._fontawesome-webfont.svg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._icomoon.svg" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._logo%402x.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._logo-footer%402x.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._logo-footer.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._logo.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._long-arrow%402x.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._long-arrow.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._small-arrow%402x.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\images\._small-arrow.png" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._app.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._jquery-1.11.1.min.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._plugins.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\ie-support\._html5.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\ie-support\._pie.htc" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\ie-support\._respond.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\min\._app-min.js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\min\._plugins-min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="assets\LandingPage_assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\LandingPage_assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\LandingPage_assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\LandingPage_assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\LandingPage_assets\fonts\icomoon.eot" />
+    <Content Include="assets\LandingPage_assets\fonts\icomoon.ttf" />
+    <Content Include="assets\LandingPage_assets\fonts\icomoon.woff" />
+    <Content Include="assets\LandingPage_assets\js\jquery-1.11.1.min.map" />
+    <Content Include="assets\LandingPage_assets\sass\layout\_content.scss" />
+    <Content Include="assets\LandingPage_assets\sass\layout\_footer.scss" />
+    <Content Include="assets\LandingPage_assets\sass\layout\_header.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\bootstrap-grid\_grid.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\bootstrap-grid\_mixins.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\bootstrap-grid\_settings.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\_component.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\_lineo-icon.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\_normalize.scss" />
+    <Content Include="assets\LandingPage_assets\sass\libs\_settings.scss" />
+    <Content Include="assets\LandingPage_assets\sass\style.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._css" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._dummy" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._fonts" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._images" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._js" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\._sass" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._fontawesome-webfont.eot" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._fontawesome-webfont.ttf" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._fontawesome-webfont.woff" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._FontAwesome.otf" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._icomoon.eot" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._icomoon.ttf" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\fonts\._icomoon.woff" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._ie-support" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._jquery-1.11.1.min.map" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\js\._min" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\._layout" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\._libs" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\._style.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\layout\.__content.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\layout\.__footer.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\layout\.__header.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\._bootstrap-grid" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\.__component.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\.__lineo-icon.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\.__mixins.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\.__normalize.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\.__settings.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\bootstrap-grid\.__grid.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\bootstrap-grid\.__mixins.scss" />
+    <Content Include="assets\LandingPage_assets\__MACOSX\sass\libs\bootstrap-grid\.__settings.scss" />
+    <None Include="packages.config" />
+    <Content Include="Views\LandingPage_LayoutPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\OurOffer.cshtml" />
+    <Content Include="Views\Home\CustomerProtection.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51185</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.5.0.4\build\Microsoft.TypeScript.MSBuild.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

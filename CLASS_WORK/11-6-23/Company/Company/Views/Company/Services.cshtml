@@ -1,0 +1,55 @@
+﻿<main>
+
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/Company/Services">Services</a>
+                    <a href="/Company/Teams">Teams & Members</a>
+                    <a href="/Company/Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <h2>Services</h2>
+    </div>
+
+    <div>
+        We Provide different services. Those are :
+
+        @* Card 1 *@
+        <!--<div class="card">
+            <img src="#" class="card-img-top" alt="Service 1" />
+            <div class="card-body">
+
+                <h5 class="card-title">@Model[0].Name</h5>
+                <p class="card-text">Description 1</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+
+            </div>
+        </div>-->
+
+        @* Card 1 *@
+
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <img src="#" class="card-img-top" alt="Service Image" />
+                <div class="card-body">
+
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+
+</main>

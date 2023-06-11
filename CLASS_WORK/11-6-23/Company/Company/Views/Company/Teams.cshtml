@@ -1,0 +1,71 @@
+﻿<main>
+
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/Company/Services">Services</a>
+                    <a href="/Company/Teams">Teams & Members</a>
+                    <a href="/Company/Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <h2>Teams & Members</h2>
+    </div>
+
+    <div>
+        There are currently 2 Teams in our Company
+
+        @* Card 1 *@
+        @foreach(var item in Model)
+         {
+            <div class="card">
+                <img src="#" class="card-img-top" alt="Team Image" />
+                <div class="card-body">
+
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">
+                        <ol>
+                            @foreach (var MEMBERS in item.Members)
+                            {
+                                <li>
+                                    <ul>
+                                        <li>
+                                            @*Name :*@ @MEMBERS.Name
+                                        </li>
+                                        <li>
+                                            @*Designation :*@ @MEMBERS.Designation
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                        </ol>
+
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+
+                </div>
+            </div>
+         }
+
+        @* Card 2 *@
+        <!--<div class="card">
+            <img src="#" class="card-img-top" alt="Service 2" />
+            <div class="card-body">
+
+                <h5 class="card-title">Title 1</h5>
+                <p class="card-text">Description 1</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+
+            </div>
+        </div>-->
+
+
+    </div>
+
+
+</main>
